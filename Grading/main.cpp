@@ -9,11 +9,11 @@
 #include <iostream>
 #include <exception>
 #include "Grade.hpp"
-
+void thumbsUp();
 int main(int argc, const char * argv[]) {
 
 	grade gr1;
-	unsigned short gr;
+	unsigned short gr = 0;
 	bool checkValid= false;
 
 
@@ -57,8 +57,25 @@ int main(int argc, const char * argv[]) {
 			break;
 		case 90 ... 100:
 			std::cout<<"Woah. This is an A"<<std::endl;
+			thumbsUp();
 			break;
 	}
 
 	return 0;
 }
+
+void thumbsUp(){
+
+	using namespace std;
+
+	cout<<endl;
+	cout<<"    /@"<<endl;
+	cout<<"    \\ \\"<<endl;
+	cout<<"  ___> \\"<<endl;
+	cout<<" (__O)  \\"<<endl;
+	cout<<"(____@)  \\"<<endl;
+	cout<<"(____@)   \\"<<endl;
+	cout<<" (__o)_    \\"<<endl;
+	cout<<"       \\    \\"<<endl;
+}
+
